@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: yellow; */
+    font-size: 1rem;
+}
+
+body {
+    background-color: #3b3b89;
+    width: 100%;
+}
+
+form {
+    background-color: orange;
+    width: 35%;
+    margin: 0px auto;
+    color: yellow;
+}
+
+h3 {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+fieldset {
+    background-color: rgb(30, 40, 46);
+    border: none;
+    color: yellow;
+}
+
+fieldset input {
+    width: 100%;
+}
+
+label {
+    display: block;
+    padding: 10px 20px;
+}
+label input {
+    margin-top: 5px;
+}
+ul{
+    font-size: 0.8rem;
+    margin: -10px 20px 10px;
+}
+ul li{
+    margin-left: 30px;
+    font-size: 0.8rem;
+}
+.inline {
+    width: 18px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+label[for="gender"] > .inline{
+    margin-left: 8px;
+}
+seclect {
+    width: fit-content;
+    font-size: 13px;
+}
+
+#button {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+input[value="Submit"] {
+    background-color: rgb(43, 143, 43);
+    color: white;
+    border: none;
+    width: 80px;
+    height: 40px;
+    margin-right: 3px;
+    cursor: pointer;
+
+}
+
+input[value="Cancel"] {
+    background-color: rgb(194, 61, 61);
+    color: white;
+    border: none;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
