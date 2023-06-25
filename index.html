@@ -14,20 +14,20 @@
                 <h3>Sign Up</h3>
                 <fieldset>
                         <!-- Input F-Name -->
-                        <label for="f-name">First Name
+                        <label for="f-name">First Name <span id="fnam_fail"></span>
                                 <input type="text" name="f-name" id="f-name" placeholder="Enter First Name" required>
-                                <p id="check_fname"></p>
                         </label>
                         <!-- Input L-Name -->
-                        <label for="l-name">Last Name
+                        <label for="l-name">Last Name <span id="lnam_fail"></span>
                                 <input type="text" name="l-name" id="l-name" placeholder="Enter Last Name" required>
-                                <p id="check_lname"></p>
+                                <p class="note">&#42Note: First&frasl;Last name không được chứa số hoặc ký tự đặt biệt,đầu và đuôi không có
+                                        Khoảng Trắng, không dấu , không để trống, độ dài 2~20 ký tự.&#42</p>
                         </label>
 
                         <!-- Input Date Of Bir -->
-                        <label for="date-of-birth">Date of Birth
+                        <label for="date">Date of Birth
                                 <div>
-                                        <select name="date-of-birth" id="date" class="date-of-birth">
+                                        <select name="date" id="date" class="date-of-birth">
                                                 <option value="">Date</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -61,7 +61,7 @@
                                                 <option value="30">30</option>
                                                 <option value="31">31</option>
                                         </select>
-                                        <select name="date-of-birth" id="month" class="date-of-birth">
+                                        <select name="month" id="month" class="date-of-birth">
                                                 <option value="">Month</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -76,7 +76,7 @@
                                                 <option value="11">11</option>
                                                 <option value="12">12</option>
                                         </select>
-                                        <select name="date-of-birth" id="year" class="date-of-birth">
+                                        <select name="year" id="year" class="date-of-birth">
                                                 <option value="">Year</option>
                                                 <option value="2023">2023</option>
                                                 <option value="2022">2022</option>
@@ -184,10 +184,10 @@
                         </label>
                         <!-- Input Gender -->
 
-                        <label for="gender">Gender
-                                <input type="radio" name="gender" id="male" checked class="inline">Male
+                        <label for="male">Gender
+                                <input type="radio" name="gender" id="male" class="inline">Male
                                 <input type="radio" name="gender" id="female" class="inline">Female
-                                <input type="radio" name="gender" id="other" class="inline">Other
+                                <input type="radio" name="gender" id="other" class="inline" checked>Other
                         </label>
                         <!-- Input Country -->
                         <label for="country">Country<div><select name="country" id="country">
@@ -225,9 +225,9 @@
                                 <li>Độ dài từ 8 ~ 30</li>
                         </ul>
 
-                        <label for="confirm-password">
+                        <label for="confirm_password">
                                 Confirm Password
-                                <input type="password" id="confirm_password" name="confirm-password" required>
+                                <input type="password" id="confirm_password" name="confirm_password" required>
                                 <p id="confirm"></p>
                         </label>
 
@@ -240,9 +240,9 @@
                 <div id="button"><input type="button" value="Submit" id="submit">
                         <input type="reset" value="Cancel">
                 </div>
-
         </form>
-
+        <p>Thầy bắt được lỗi gì thì thầy góp ý giúp em qua Email: heoloveninh2014@gmail.com</p>
+        <p>Cảm ơn sự góp ý của thầy</p>
 </body>
 
 </html>

@@ -4,23 +4,19 @@ let checkForm = () => {
     let checkName = () => {
         let fname = document.getElementById('f-name').value;
         let lname = document.getElementById('l-name').value;
-        if (/^[a-zA-Z]+[a-zA-Z\s]+[a-zA-Z]$/.test(fname) === false) {
-            document.getElementById('check_fname').style.color = "red";
-            document.getElementById('check_fname').style.fontSize = "13px";
-            document.getElementById('check_fname').style.fontStyle = "italic";
-            document.getElementById('check_fname').innerHTML = "* First Name không được chứa số hoặc ký tự đặt biệt, không dấu , không để trống."
+        if (/^[a-zA-Z]([A-Za-z\s]*)[A-Za-z]$/.test(fname) === false || fname.length > 20) {
+            document.getElementById('fnam_fail').style.color = "red";
+            document.getElementById('fnam_fail').innerHTML = "*";
             return document.getElementById(`f-name`).focus();
         } else {
-            document.getElementById('check_fname').innerHTML = '';
+            document.getElementById('fnam_fail').innerHTML = '';
         }
-        if (/^[a-zA-Z]+[a-zA-Z\s]+[a-zA-Z]$/.test(lname) === false) {
-            document.getElementById('check_lname').style.color = "red";
-            document.getElementById('check_lname').style.fontSize = "13px";
-            document.getElementById('check_lname').style.fontStyle = "italic";
-            document.getElementById('check_lname').innerHTML = "* Last Name không được chứa số hoặc ký tự đặt biệt, không dấu , không để trống."
+        if (/^[a-zA-Z]([A-Za-z\s]*)[A-Za-z]$/.test(lname) === false || lname.length > 20) {
+            document.getElementById('lnam_fail').style.color = "red";
+            document.getElementById('lnam_fail').innerHTML = "*";
             return document.getElementById(`l-name`).focus();
         } else {
-            document.getElementById('check_lname').innerHTML = '';
+            document.getElementById('lnam_fail').innerHTML = '';
         }
         subMit++;
     }
